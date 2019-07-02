@@ -27,18 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
   
-  if (empty($_POST["phone"])) {
-    $phone_error = "Phone is required";
-  } else {
-    $phone = test_input($_POST["phone"]);
-    // check if e-mail address is well-formed
-    if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$phone)) {
-      $phone_error = "Invalid phone number"; 
-    }
-  }
-
  
-  
 
   if (empty($_POST["message"])) {
     $message = "";
