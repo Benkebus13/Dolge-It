@@ -10,13 +10,15 @@
     <title>Kontakt</title>
     <link rel="stylesheet" href="../Css/Dolgegrid.css" type="text/css" />
     <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    />
-    <link rel="stylesheet" href="../Css/form.css" type="text/css" />
+      href="<script src="https://kit.fontawesome.com/28e6c032a0.js"></script>"
+    <link rel="stylesheet" href="../Css/formtest.css" type="text/css"/>
     
-    
-  </head>
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
 
+
+</head>
+
+    
   <body>
     <div class="wrapper">
       <div class="top1">
@@ -48,6 +50,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+      
       <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -63,12 +66,9 @@
 
       <div class="main">
         <h1>Kontakt</h1>
-        <p>
-          Här kommer det att finnas ett formulär och en karta över kontakter.
-        </p>
 
-        <form id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-          <h3>Kontakt</h3>
+<form method="POST" name="myemailform" action="form-to-email.php">
+
           <h4>
             Lämna ett meddelande här,<br />
             så återkommer jag så fort jag kan.
@@ -76,7 +76,8 @@
           <fieldset>
             <input
               placeholder="Ditt namn"
-              type="name"
+              type="text"
+              name="name"
               tabindex="1"
               required
               autofocus
@@ -85,7 +86,8 @@
           <fieldset>
             <input
               placeholder="Din E-mail"
-              type="email"
+              type="text"
+              name="email"
               tabindex="2"
               required
             />
@@ -94,7 +96,8 @@
           <fieldset>
             <textarea
               placeholder="Lämna ditt meddelande här...."
-              type="comment"
+              type="textarea"
+              name="message"
               tabindex="5"
               required
             ></textarea>
@@ -103,6 +106,7 @@
             <button
               name="Submit"
               type="submit"
+              value="submit"
               id="contact-submit"
               data-submit="...Sending"
             >
@@ -110,6 +114,25 @@
             </button>
           </fieldset>
         </form>
+
+        <script type="text/javascript">
+          var frmvalidator  = new Validator("myemailform");
+
+          frmvalidator.addValidation("name","maxlen=40",
+                                          "Skriv ditt namn");
+            frmvalidator.addValidation("email","maxlen=50");
+            frmvalidator.addValidation("email","req","skriv din mailadress");
+            frmvalidator.addValidation("email","email","skriv en giltig emaladress!");
+
+              frmvalidator.addValidation("message","maxlen=2000","Max antal tecken är 2000");
+              frmvalidator.addValidation("message","req","Lämna ett medelande");
+
+
+        </script>      
+
+
+
+         
 
         <div class="container"></div>
       </div>
@@ -127,8 +150,6 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+   
   </body>
 </html>
