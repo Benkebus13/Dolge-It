@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<link rel="shortcut icon" href="../Img/icons/favicon.ico">
+  <link rel="shortcut icon" href="../Img/icons/favicon.ico" />
 
   <head>
     <meta charset="UTF-8" />
@@ -11,13 +10,12 @@
     <title>Kontakt</title>
 
     <link rel="stylesheet" href="../Css/Dolgegrid.css" type="text/css" />
-    <link rel="stylesheet" href="../Css/form.css" type="text/css"/>
+    <link rel="stylesheet" href="../Css/form.css" type="text/css" />
 
-    <script src="../PHP/form-to-email.php" type="text/javascript"></script>
+    <script src="PHP/form-to-email.php" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/28e6c032a0.js"></script>
-</head>
+  </head>
 
-    
   <body>
     <div class="wrapper">
       <div class="top1">
@@ -49,7 +47,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      
+
       <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -66,8 +64,7 @@
       <div class="main">
         <h1>Kontakt</h1>
 
-<form method="POST" name="myemailform" action="form-to-email.php"> 
-
+        <form method="POST" name="myemailform" action="PHP/form-to-email.php">
           <h4>
             Lämna ett meddelande här,<br />
             så återkommer jag så fort jag kan.
@@ -78,7 +75,8 @@
               type="text"
               name="name"
               tabindex="1"
-              autofocus />
+              autofocus
+            />
           </fieldset>
 
           <fieldset>
@@ -86,15 +84,17 @@
               placeholder="Din E-mail"
               type="text"
               name="email"
-              tabindex="2" />
-
+              tabindex="2"
+            />
           </fieldset>
-         
-       
+
           <fieldset>
-           
-           <textarea name="message" placeholder="Lämna ditt meddelande här..." tabindex="3" id=""></textarea> 
-           
+            <textarea
+              name="message"
+              placeholder="Lämna ditt meddelande här..."
+              tabindex="3"
+              id=""
+            ></textarea>
           </fieldset>
 
           <fieldset>
@@ -102,31 +102,32 @@
               name="Submit"
               type="submit"
               value="submit"
-            
-              id="contact-submit">
+              id="contact-submit"
+            >
               Skicka meddelande
             </button>
           </fieldset>
         </form>
 
         <script type="text/javascript">
-          var frmvalidator  = new Validator("myemailform");
+          var frmvalidator = new Validator("myemailform");
 
-          frmvalidator.addValidation("name","maxlen=40",
-                                          "Skriv ditt namn");
-            frmvalidator.addValidation("email","maxlen=50");
-            frmvalidator.addValidation("email","req","skriv din mailadress");
-            frmvalidator.addValidation("email","email","skriv en giltig emaladress!");
+          frmvalidator.addValidation("name", "maxlen=40", "Skriv ditt namn");
+          frmvalidator.addValidation("email", "maxlen=50");
+          frmvalidator.addValidation("email", "req", "skriv din mailadress");
+          frmvalidator.addValidation(
+            "email",
+            "email",
+            "skriv en giltig emaladress!"
+          );
 
-              frmvalidator.addValidation("message","maxlen=2000","Max antal tecken är 2000");
-              frmvalidator.addValidation("message","req","Lämna ett medelande");
-
-
-        </script>      
-
-
-
-         
+          frmvalidator.addValidation(
+            "message",
+            "maxlen=2000",
+            "Max antal tecken är 2000"
+          );
+          frmvalidator.addValidation("message", "req", "Lämna ett medelande");
+        </script>
 
         <div class="container"></div>
       </div>
@@ -143,7 +144,5 @@
         <p><b>Dolge IT & Support &copy; 2018 </b></p>
       </div>
     </div>
-
-   
   </body>
 </html>
