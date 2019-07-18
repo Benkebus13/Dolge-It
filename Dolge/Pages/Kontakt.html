@@ -15,25 +15,6 @@
     <script src="PHP/form-to-email.php" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/28e6c032a0.js"></script>
 
-    <script type="text/javascript">
-      var frmvalidator = new Validator("myemailform");
-
-      frmvalidator.addValidation("name", "maxlen=40", "Skriv ditt namn");
-      frmvalidator.addValidation("email", "maxlen=50");
-      frmvalidator.addValidation("email", "req", "skriv din mailadress");
-      frmvalidator.addValidation(
-        "email",
-        "email",
-        "skriv en giltig emaladress!"
-      );
-
-      frmvalidator.addValidation(
-        "message",
-        "maxlen=2000",
-        "Max antal tecken är 2000"
-      );
-      frmvalidator.addValidation("message", "req", "Lämna ett medelande");
-    </script>
 
   </head>
 
@@ -128,6 +109,29 @@
               Skicka meddelande
             </button>
           </fieldset>
+
+
+
+          <script type="text/javascript">
+            var frmvalidator = new Validator("myemailform");
+      
+            frmvalidator.addValidation("name", "maxlen=40", "Skriv ditt namn");
+            frmvalidator.addValidation("email", "maxlen=50");
+            frmvalidator.addValidation("email", "req", "skriv din mailadress");
+            frmvalidator.addValidation(
+              "email",
+              "email",
+              "skriv en giltig emaladress!"
+            );
+      
+            frmvalidator.addValidation(
+              "message",
+              "maxlen=2000",
+              "Max antal tecken är 2000"
+            );
+            frmvalidator.addValidation("message", "req", "Lämna ett medelande");
+          </script>
+      
         </form>
 
 
