@@ -1,9 +1,9 @@
 
-<link rel="stylesheet" href="form.css" type="text/css"/>
+<link rel="stylesheet" href="Dolge/Css/form.css" type="text/css"/>
  
 <div class="container">  
-  <form id="contact" action="" method="post">
-    <h3>Quick Contact</h3>
+  <form id="contact" action="<?= $_SERVER{´PHP_SELF´};?>" method="post">
+    <h3>Kontakta mig!</h3>
     <h4>Contact us today, and get reply with in 24 hours!</h4>
     <fieldset>
       <input placeholder="Your name" type="text" tabindex="1" required autofocus>
