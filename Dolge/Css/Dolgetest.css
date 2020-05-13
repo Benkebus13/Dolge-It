@@ -1,0 +1,78 @@
+.wrapper {
+    text-align: center;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: auto;
+   }
+  
+  h1 {
+      font-family: fantasy;
+      font-size: 1.5rem;
+      color: #6015da;
+  }
+  
+  h2 {
+    font-family: fantasy;
+    font-size: 1.1rem;
+    color: #d87c14;
+}
+
+  .top1 {
+        grid-column: 1 ;
+    background-color: rgb(255, 127, 170);
+  }
+  
+  .top2 {
+      grid-column: 5 ;
+    background-color: black;
+    color: aquamarine;
+  }
+  
+  .header {
+      grid-column: 1 / 6 ;
+    background-color: antiquewhite;
+  }
+  
+  .menu {
+    background-color: #a6ff00;
+    overflow: hidden;
+    grid-column: 1 / 6 ;
+  
+  }
+  
+  .menu ul {
+    display: block;
+  }
+  
+  .menu ul li {
+  color: #d82525;
+  background-color: #868282;
+  display: block;
+  
+  }
+  
+  .menu ul li a {
+    color: aqua;
+    display: block;
+  }
+  
+  .leftside {
+    grid-column: 1 ;
+    background-color: #ddd341;
+  }
+  
+  .main {
+      grid-column: 2 / 4 ;
+    background-color: darkgrey;
+  }
+  
+  .rightside {
+      grid-column: 5;
+    background-color: chocolate;
+  }
+  
+  .footer {
+      grid-column: 1 / 6;
+    background-color: #d82525;
+  

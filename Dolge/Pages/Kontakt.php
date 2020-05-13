@@ -16,6 +16,7 @@
 
     <script src="https://kit.fontawesome.com/28e6c032a0.js"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdQQH8UAAAAAASJysWbT6YBo9vf9f6-ITubbimR"></script>
 
   </head>
 
@@ -69,7 +70,7 @@
 
         <div class="container">
 
-          <form id="contact" action="" method="post">
+          <form id="contact" action="<?= $_SERVER['PHP_SELF'];?>" method="post">
             <h3>KONTAKTA MIG HÄR!</h3>
             <h4>Du får svar inom 24 timmar!</h4>
             <fieldset>

@@ -1,5 +1,8 @@
 <?php 
 
+print_r($_POST);
+
+
 // define variables and set to empty values
 $name_error = $email_error = "";
 $name = $email = $message = $success = "";
