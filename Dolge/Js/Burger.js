@@ -1,3 +1,10 @@
+const toggleButton = document.getElementsByClassName('menu-btn')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click',()=>{
+  navbarLinks.classList.toggle('active')
+})
+
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -9,3 +16,4 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
