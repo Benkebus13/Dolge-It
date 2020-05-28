@@ -95,7 +95,7 @@ display: none;
 @media (max-width: 687px) {
     .menu-btn {
         height: 30px;
-        top: 58px;
+        top: 10px;
         right: 25px;
         position: absolute;
         display: flex;
