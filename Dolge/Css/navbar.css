@@ -12,6 +12,10 @@ p {
     padding: 2%;
 }
 
+h1, h2, h3 {
+    padding: 15px;
+    text-align: center;
+}
 
 .top {
     display: flex;
@@ -89,6 +93,40 @@ justify-content: space-between;
 
 .menu-btn_burger {
 display: none;
+}
+
+.main img {
+    border: 5px solid sandybrown;
+}
+
+.content {
+    display: flex;
+}
+
+.main {
+padding: 2%;
+width: 80%;
+}
+
+.bilder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-side {
+    flex-grow: 2;
+    width: 20%;
+    padding: 2%;
+}
+
+.image_off,
+#home:hover .image_on {
+  display: none;
+}
+
+.image_on,
+#home:hover .image_off {
+  display: flex;
 }
 
 @media (max-width: 687px) {
