@@ -6,6 +6,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
 /* Navbar section*/
 
 .nav-container {
@@ -58,15 +70,50 @@ background-color: #555;
 
 /*content*/
 .main-container {
-  background-color: aqua; 
+    display: flex;
+     
+    
 }
 
 .content {
-background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10%;
+    background-color: #555;
+    color: whitesmoke;
+}
+
+.link {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.link a {
+    list-style: none;
+}
+.bilder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image_off,
+#home:hover .image_on {
+  display: none;
+}
+
+.image_on,
+#home:hover .image_off {
+  display: flex;
 }
 
 .right-side {
-background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 20%;
+    padding: 1%;
+    
 }
 
 .footer {
