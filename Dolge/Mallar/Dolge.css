@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 1.5rem;
 }
 
 img {
@@ -33,6 +34,7 @@ h1, h2, h3 {
    margin: .5rem;
    text-transform: uppercase;
 }
+
 .navbar-links ul {
 margin: 0;
 padding: 0;
@@ -70,9 +72,7 @@ background-color: #555;
 
 /*content*/
 .main-container {
-    display: flex;
-     
-    
+    display: flex;   
 }
 
 .content {
@@ -82,16 +82,17 @@ background-color: #555;
     padding: 10%;
     background-color: #555;
     color: whitesmoke;
+    border-radius: 30px;
 }
 
+.content a {
+    text-decoration: none;
+}
 .link {
     text-decoration: none;
     color:whitesmoke;
 }
 
-.link a {
-    list-style: none;
-}
 .bilder {
     display: flex;
     justify-content: space-evenly;
@@ -112,12 +113,21 @@ background-color: #555;
     flex-direction: column;
     justify-items: center;
     width: 20%;
-    padding: 1%;
-    
+    padding: 1%;    
+}
+
+.right-side h2, h3 {
+    color: #555;
+}
+
+.right-side img {
+    border-radius: 100%;
 }
 
 .footer {
-background-color: violet;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -173,4 +183,9 @@ background-color: violet;
     .navbar-links.active {
         display: flex;
     }
+
+   .main-container {
+       display: flex;
+      width: 100%;
+   }
 }
