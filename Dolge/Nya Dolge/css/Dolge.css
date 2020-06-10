@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Architects Daughter', cursive;
     font-size: 1.5rem;
 }
 
@@ -30,6 +31,7 @@ h1, h2, h3 {
 }
 
 .logga {
+    font-family: 'Berkshire Swash', cursive;
    font-size: 1.5rem;
    margin: .5rem;
    text-transform: uppercase;
@@ -123,18 +125,108 @@ background-color: #555;
 .right-side img {
     border-radius: 100%;
 }
+/* Gallery */
+
+.gallery-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-wrap h1 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 5% 0 2% 0;
+    color: #555;
+    text-align: center;  
+}
+
+.gallery-text {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    color: #555;
+}
+
+.gallery-text a {
+    text-decoration: none;
+}
+
+.gallery-text .link {
+    color: #555;
+}
+
+.img-area { 
+    position: relative; 
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 45px 0;  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense; 
+}
+
+}
+.single-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0 , 0, 0.9 );
+    border-radius: 10px;
+}
+
+.single-img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.single-img:nth-child:(2n+3){
+    grid-row-start: span 3;
+}
+
+.single-img:nth-child:(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.single-img:nth-child:(6n+7){
+    grid-row-start: span 1;
+}
+
+.single-img:nth-child:(8n+9){
+    grid-column-start: span ;
+    grid-row-start: span 1;
+}
+
+.single-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(80);
+    transition: 0.3s ease-in-out;
+}
+
+.single-img:hover img {
+    filter: brightness(1) grayscale(0);
+}
 
 .footer {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #555;
 }
+/* media device ipad and smartphone*/
 
-
-@media (max-width: 687px) {
+@media (max-width: 1024px) {
 
     .logga {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .menu-btn {
@@ -155,8 +247,7 @@ background-color: #555;
        width: 100%;
     }
 
-    .nav-container {
-       
+    .nav-container {       
         color: whitesmoke;
         background-color: #333;       
         flex-direction: column;
@@ -185,7 +276,36 @@ background-color: #555;
     }
 
    .main-container {
-       display: flex;
-      width: 100%;
+        display: block;
+        width: 100%;
    }
+
+   .content {
+       width: fit-content;
+       margin: 2%;
+       padding: 5%;
+   }
+   .right-side {
+       display: flex;
+       flex-direction: column;
+       margin: 2% auto;
+       width: 50%;
+    }
+   
+    .img-area {
+        display: grid ;
+        grid-template-columns: auto auto auto;
+    }
 }
+
+/*Media for old devices and smartphones*/
+
+@media (max-width: 867px) {
+    .img-area {
+        display: grid ;
+        grid-template-columns: auto auto;
+    }
+
+} 
+
+
