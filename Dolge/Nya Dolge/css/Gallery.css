@@ -1,0 +1,86 @@
+.gallery-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-wrap h1 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 5% 0 2% 0;
+    color: #555;
+    text-align: center;  
+}
+
+.gallery-text {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    color: #555;
+}
+
+.gallery-text a {
+    text-decoration: none;
+}
+
+.gallery-text .link {
+    color: #555;
+}
+
+.img-area { 
+    position: relative; 
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 45px 0;  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense; 
+}
+
+}
+.single-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0 , 0, 0.9 );
+    border-radius: 10px;
+}
+
+.single-img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.single-img:nth-child:(2n+3){
+    grid-row-start: span 3;
+}
+
+.single-img:nth-child:(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.single-img:nth-child:(6n+7){
+    grid-row-start: span 1;
+}
+
+.single-img:nth-child:(8n+9){
+    grid-column-start: span ;
+    grid-row-start: span 1;
+}
+
+.single-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(80);
+    transition: 0.3s ease-in-out;
+}
+
+.single-img:hover img {
+    filter: brightness(1) grayscale(0);
+}
