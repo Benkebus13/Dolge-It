@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Architects Daughter', cursive;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 img {
@@ -52,12 +52,20 @@ display: flex;
     color: whitesmoke;
     padding: 1rem;
     display: block;
+    border: lightgrey 1px solid;
+    border-radius: 25px;
+    
 }
 
 .navbar-links li:hover {
 background-color: #555;
+transition: ease-in-out 700ms;
 }
 
+
+.navbar-links .active {
+    background-color: lightgrey;
+}
 /*burger*/
 
 .menu-btn {
@@ -82,7 +90,7 @@ background-color: #555;
     flex-direction: column;
     width: 80%;
     padding: 10%;
-    background-color: #555;
+    background-color: rgba(131, 126, 126, 0.356);
     color: whitesmoke;
     border-radius: 30px;
 }
