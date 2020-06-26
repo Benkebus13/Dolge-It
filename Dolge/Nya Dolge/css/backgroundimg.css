@@ -4,7 +4,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgba(185, 94, 33, 0.904);
     line-height: 1.6;
@@ -20,27 +20,27 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 3%;
+    padding: 0 6%;
 }
 
 #showcase h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 #showcase p {
-    padding: 2% 5%;
+    padding: 3% 5%;
     margin-bottom: 10px;
 }
 
 #showcase p:hover {
     color: whitesmoke;
-    background-color: rgba(109, 160, 241, 0.904);
+    background-color: rgba(185, 94, 33, 0.304);
 }
 
 #button {
     text-decoration: none;
-    color: rgba(109, 160, 241, 0.904);
-    border: rgba(109, 160, 241, 0.904) 1px solid;
+    color: rgba(185, 94, 33, 0.904);
+    border: rgba(185, 94, 33, 0.904) 1px solid;
     border-radius: 15px;
     padding: 10px 20px;
     font-weight: bold;
@@ -48,18 +48,20 @@ body {
 
 #button:hover {
     color: whitesmoke;
-    background-color:rgba(109, 160, 241, 0.904);
+    background-color:rgba(185, 94, 33, 0.904);
     
 }
 
 #section-a {
-    padding: 2% 5%;
-    background-color: rgba(109, 160, 241, 0.904);
+    font-size: 1.2rem;
+    padding: 5% 10%;
+    background-color: rgba(185, 94, 33, 0.904);
     color: whitesmoke;
 }
 
 #section-b {
-    padding: 2% 5%;
+    font-size: 1.2rem;
+    padding: 5% 10%;
     background-color: #e4d9d9;
 }
 
@@ -71,7 +73,7 @@ body {
 }
 
 .box-1, .box-3 {
-    background-color: rgba(109, 160, 241, 0.904);
+    background-color: rgba(185, 94, 33, 0.904);
     color: whitesmoke;
     padding: 2% 5%;
 }
@@ -82,8 +84,8 @@ body {
 
 @media screen and (max-width: 1024px) {
     #button {
-        color: whitesmoke;
-        border: whitesmoke 1px solid;
+        color: rgba(185, 94, 33, 0.904);
+        border: rgba(185, 94, 33, 0.904) 1px solid;
         font-weight: bold;
     }
 }

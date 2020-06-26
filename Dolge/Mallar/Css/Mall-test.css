@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+}
+
+/* Navbar section*/
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logga {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightsalmon;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.fa {
+    
+    color: lightsalmon;
+    height: .5rem;
+}
+
+.navbar-links {
+    width: 80%;
+    padding: 0;
+    background-color: rgba(56, 52, 52, 0.479);
+    margin: auto;
+}
+
+.navbar-links ul {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 60px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar-links li a {
+     text-decoration: none;
+     color: darkred;
+     padding: 5px 10px;
+}
+
+.navbar-links ul li i {
+    margin: 1 15px;
+}
+
+.navbar-links li:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+/*burger*/
+
+.menu-btn {
+  top: 0;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-btn_burger {
+  display: none;
+}
+
+/*content*/
+.main-container {
+}
+
+.content {
+}
+
+.content a {
+}
+.link {
+}
+
+.bilder {
+}
+
+.image_off,
+#home:hover .image_on {
+}
+
+.image_on,
+#home:hover .image_off {
+}
+
+.right-side {
+}
+
+.right-side h2,
+h3 {
+}
+
+.right-side img {
+}
+
+.footer {
+}
+
+@media (max-width: 687px) {
+  .logga {
+  }
+
+  .menu-btn {
+    height: 25px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    display: flex;
+  }
+
+  .menu-btn_burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navbar-links {
+
+  }
+
+  .nav-container {
+  }
+
+  .navbar-links ul {
+  }
+
+  .navbar-links li {
+  }
+
+  .navbar-links li a {
+  }
+
+  .navbar-links li:hover {
+  }
+
+  .navbar-links.active {
+  }
+
+  .main-container {
+  }
+}
