@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-}
+
 
 body {
     margin: 0;
@@ -89,7 +89,7 @@ transition: ease-in-out 700ms;
 /*burger*/
 
 .menu-btn {
-    top: ;
+    top: 0 ;
     right: 1rem;
     flex-direction: column;
     justify-content: space-between;
