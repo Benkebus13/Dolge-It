@@ -1,0 +1,31 @@
+.nav {
+    background: antiquewhite;
+    padding: 25px 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 1em;
+}
+
+.nav a {
+    color: rgb(51, 68, 85);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav:hover {
+    color: rgb(87, 128, 155);
+}
+
+.fa {
+    color: greenyellow;
+}

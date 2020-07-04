@@ -34,7 +34,8 @@ h1, h2, h3 {
 
 .logga {
    font-family: 'Berkshire Swash', cursive;
-   font-size: 1.5rem;
+   font-size: 2.5rem;
+   height: 2.5rem;
    margin: .5rem;
    text-transform: uppercase;
    background-image: linear-gradient(45deg,
@@ -89,8 +90,8 @@ transition: ease-in-out 700ms;
 /*burger*/
 
 .menu-btn {
-    top: 0 ;
-    right: 1rem;
+    top: 0rem;
+    right: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
     }
@@ -110,7 +111,7 @@ transition: ease-in-out 700ms;
     flex-direction: column;
     width: 80%;
     padding: 10%;
-    background-color: rgba(131, 126, 126, 0.356);
+    background-image: linear-gradient(to right bottom, #407cb8, #1b82b4, #0086ad, #008aa2, #008c96, #219592, #3b9d8c, #54a586, #7bb78a, #a1c891, #c8d89b, #eee8a9);
     color: whitesmoke;
     border-radius: 30px;
 }
