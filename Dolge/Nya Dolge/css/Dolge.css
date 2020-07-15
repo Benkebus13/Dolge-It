@@ -29,7 +29,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     color: whitesmoke;
-    background-color: #333;
+    background-color: #799A37;
 }
 
 .logga {
@@ -73,19 +73,18 @@ display: flex;
     color: whitesmoke;
     padding: 1rem;
     display: block;
-    border: lightgrey 1px solid;
+    border: #C6BA56 1px solid;
     border-radius: 25px;
-    
 }
 
 .navbar-links li:hover {
-background-color: #555;
+background-color: #1D7828;
 transition: ease-in-out 700ms;
 }
 
 
 .navbar-links .active {
-    background-color: lightgrey;
+    background-color: #779974;
 }
 /*burger*/
 
@@ -151,6 +150,9 @@ transition: ease-in-out 700ms;
     color: #555;
 }
 
+.right-side a {
+    color: black;
+}
 .right-side img {
     max-width: 250px;
     border-radius: 100%;
@@ -198,7 +200,7 @@ transition: ease-in-out 700ms;
 
     .nav-container {       
         color: whitesmoke;
-        background-color: #333;       
+        background-color: #799A37;       
         flex-direction: column;
         align-items: flex-start;
     }
@@ -217,7 +219,7 @@ transition: ease-in-out 700ms;
     }
     
     .navbar-links li:hover {
-        background-color: #555;
+        background-color: #1D7828;
     }
 
     .navbar-links.active {
