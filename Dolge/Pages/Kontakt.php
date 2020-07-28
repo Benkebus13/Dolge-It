@@ -1,109 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-  <link rel="shortcut icon" href="../Img/icons/favicon.ico" />
+<?php
+     $message_sent = false;
+    if(isset($_POST['email']) && $_POST['email'] != ''){
 
+        if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+
+    // submit the form
+    $userName = $_POST['name'];
+    $userEmail = $_POST['email'];
+    $messageSubject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "it@dolge.se";
+    $body = "";
+
+    $body .= "From: ".$userName. "\r\n";
+    $body .= "Email: ".$userEmail. "\r\n";
+    $body .= "Message: ".$message. "\r\n";
+
+    mail($to,$messageSubject,$body);
+    
+    $message_sent = true;
+}
+    else{
+        $invalid_class_name = "form-invalid";
+    }
+        
+
+    }
+
+    
+?>
+
+<?php
+        if ($message_sent);
+    ?>
+     
+            
+
+        <?php
+        T_ELSE:
+        ?>
+
+
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>Kontakt</title>
-    <?php include 'form_process.php';?>
+    <script src="../js/mail.js"></script>
+    <link rel="stylesheet" href="../css/webform.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    
 
-    <link rel="stylesheet" href="../Css/Dolgegrid.css" type="text/css" />
-    <link rel="stylesheet" href="../Css/form.css" type="text/css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <a href="https://icons8.com/icon/wFfu6zXx15Yk/home"></a>
+    <link rel="stylesheet" type="text/css" href="../css/Dolge.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Carusell.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/burger.css" />
 
-    <script src="https://kit.fontawesome.com/28e6c032a0.js"></script>
-
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdQQH8UAAAAAASJysWbT6YBo9vf9f6-ITubbimR"></script>
+  
 
   </head>
-
+  
   <body>
-    <div class="wrapper">
-      <div class="top1">
-        <img src="../Img/Banner/Dolgelogga.jpg" alt="logga" />
-      </div>
+      
+       
 
-      <div class="top2">
-        <img src="../Img\icons\youtube-logo-png-16.png" alt="Youtube" />
-        <img src="../Img\icons\Facebook-Logo-32x32.png" alt="Facebook" />
-        <img src="../Img\icons\Twitter-icon-32x32.png" alt="Twitter" />
-      </div>
-
-      <div class="header">
-        <img src="../Img/Banner/Dolge1232.png" alt="Header" />
-      </div>
-
-      <div class="topnav" id="myTopnav">
-        <a href="../index.html">Dolge</a>
-
-        <a href="../Pages/Sidor.html">Sidor</a>
-
-        <a href="../Pages/Exempel.html">Exempel</a>
-
-        <a href="../Pages/Kontakt.html" class="active">Kontakt</a>
-
-        <a href="../Pages/Links.html">Länkar</a>
-
-        <a href="javasctipt:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-      </script>
-
-      <div class="leftside"></div>
-
-      <div class="main">
-        
-
-        <div class="container">
-
-          <form id="contact" action="<?= $_SERVER['PHP_SELF'];?>" method="post">
-            <h3>KONTAKTA MIG HÄR!</h3>
-            <h4>Du får svar inom 24 timmar!</h4>
-            <fieldset>
-              <input placeholder="Ditt namn" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-              <input placeholder="Din Email Adress" type="email" tabindex="2" required>
-            </fieldset>
-            
-           
-            <fieldset>
-              <textarea placeholder="Skriv ditt meddelande här...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
-          </form>
-
-
+<div class="wrapper">
+    <div class="nav-container">
+        <div class="logga"><b>Dolge IT & Support</b>
         </div>
-      </div>
 
-      <div class="rightside">
-        <h1>Layouter</h1>
-        <h2>Mobil</h2>
-        <img src="../Img/icons/Mobilsida.png" alt="mobil" />
-        <h2>Friends of whiskey</h2>
-        <img src="../Img/icons/friends300squere.png" alt="Whiskey" />
-      </div>
+        <div class="menu-btn">
+            <div class="menu-btn_burger">
+            </div>
+        </div>
 
-      <div class="footer">
-        <p><b>Dolge IT & Support &copy; 2018 </b></p>
-      </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../../Nya Dolge/index.html">Dolge</a></li>
+            <li><a href="Exempel.html">Exempel</a></li>
+            <li><a href="Sidor.html">Sidor</a></li>
+            <li><a href="Kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="Links.html">Länkar</a></li>
+          </ul>
+        </div>
     </div>
+
+    <div class="main-container">
+        <div class="content">
+          <h1>Dolge IT & Support</h1>
+
+
+          <div class="container">
+            <form action="Kontakt.php" method="POST" class="form">
+                <div class="form-group">
+                    <label  for="name" class="form-label">Ditt Namn</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Din Email</label>
+                    <input  type="email" class="form-control <?=$invalid_class_name ?? "" ?>" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Vad du vill ha hjälp med.</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Websida, fakturering " tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Meddelande</label>
+                    <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Skriv ditt meddelande..." tabindex="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Skicka meddelande!</button>
+                </div>
+            </form>
+        </div>
+         
+        </div>
+        <div class="right-side">
+          
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><b>Dolge IT & Support &copy; 2020 </b></p>
+    </div>
+</div>
+
+    <script src="../Js/Burger.js"></script>
+    <script src="https://use.fontawesome.com/1088e0c346.js"></script>
+
+   <?php
+    T_ENDIF;
+   ?>
   </body>
 </html>
