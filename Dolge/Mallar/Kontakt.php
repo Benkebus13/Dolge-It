@@ -56,7 +56,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <a href="https://icons8.com/icon/wFfu6zXx15Yk/home"></a>
-    <link rel="stylesheet" type="text/css" href="../css/Dolge.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Dolge.css"/>
     <link rel="stylesheet" type="text/css" href="../css/Carusell.css"/>
     <link rel="stylesheet" type="text/css" href="../css/burger.css" />
 
@@ -80,7 +80,7 @@
 
         <div class="navbar-links">
           <ul>
-            <li><a href="../../Nya Dolge/index.html">Dolge</a></li>
+            <li><a href="../index.html">Dolge</a></li>
             <li><a href="Exempel.html">Exempel</a></li>
             <li><a href="Sidor.html">Sidor</a></li>
             <li><a href="Kontakt.html" class="active">Kontakt</a></li>
@@ -129,7 +129,7 @@
     </div>
 </div>
 
-    <script src="../Js/Burger.js"></script>
+    <script src="Js/Burger.js"></script>
     <script src="https://use.fontawesome.com/1088e0c346.js"></script>
 
    <?php

@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(185, 94, 33, 0.904);
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url(../Img/Blom/DSC_2677-Redigera.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 6%;
+}
+
+#showcase h1 {
+    font-size: 3rem;
+}
+
+#showcase p {
+    padding: 3% 5%;
+    margin-bottom: 10px;
+}
+
+#showcase p:hover {
+    color: whitesmoke;
+    background-color: rgba(185, 94, 33, 0.304);
+}
+
+#button {
+    text-decoration: none;
+    color: rgba(185, 94, 33, 0.904);
+    border: rgba(185, 94, 33, 0.904) 1px solid;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+#button:hover {
+    color: whitesmoke;
+    background-color:rgba(185, 94, 33, 0.904);
+    
+}
+
+#section-a {
+    font-size: 1.2rem;
+    padding: 5% 10%;
+    background-color: rgba(185, 94, 33, 0.904);
+    color: whitesmoke;
+}
+
+#section-b {
+    font-size: 1.2rem;
+    padding: 5% 10%;
+    background-color: #e4d9d9;
+}
+
+#section-c {
+    display: flex;
+    padding: 2% 5%;
+    background-color: #e4d9d9;
+    text-align: center;
+}
+
+.box-1, .box-3 {
+    background-color: rgba(185, 94, 33, 0.904);
+    color: whitesmoke;
+    padding: 2% 5%;
+}
+
+.box-2 {
+    padding: 2% 5%;
+}
+
+@media screen and (max-width: 1024px) {
+    #button {
+        color: rgba(185, 94, 33, 0.904);
+        border: rgba(185, 94, 33, 0.904) 1px solid;
+        font-weight: bold;
+    }
+}

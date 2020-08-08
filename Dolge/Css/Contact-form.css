@@ -1,0 +1,63 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.contact-form {
+  margin: 50px auto;
+  width: 65%;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  padding: 2em;
+  text-align: center;
+  border: solid 3px #09f0e89b;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  padding: 10px;
+}
+
+.contact-form input {
+  background: #0dd2ec5d;
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  background: #0dd2ec5d;
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  height: 80px;
+}
+
+.contact-form submit-btn {
+  cursor: pointer;
+  width: 150px !important;
+  margin-left: 18px !important;
+}
+
+.g-recaptcha {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.contact-form ::placeholder {
+
+}
+
+.status {
+  font-size: 15px;
+  color: darkgreen;
+  padding: 15px;
+}
+
+.status span {
+  color: darkred;
+}
