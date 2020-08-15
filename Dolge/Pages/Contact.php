@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <a href="https://icons8.com/icon/wFfu6zXx15Yk/home"></a>
     <link rel="stylesheet" type="text/css" href="../css/Dolge.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Carusell.css"/>
     <link rel="stylesheet" type="text/css" href="../css/burger.css" />
     <link rel="stylesheet" href="../css/Contact-form.css">
 
@@ -42,11 +41,13 @@
     <h2>Kontakta mig!</h2>
     <form method="post" action="">
     <input type="text" class="form-control" name="name" placeholder="Ditt Namn" required>
-    <input type="text" class="form-control" name="phone" placeholder="Ditt telefon nummer" required>
     <input type="email" class="form-control" name="email" placeholder="Ditt mail" required>
     <textarea name="message" placeholder="Ditt meddelande" required></textarea>    
 
-    <div class="g-recaptcha" data-sitekey="6LfJ-7oZAAAAAL3zBJdZdbPWFdRYBi15fQ0P7xfs"></div>
+
+    <div class="recaptcha-wrap"> 
+        <div class="g-recaptcha" data-sitekey="6LfJ-7oZAAAAAL3zBJdZdbPWFdRYBi15fQ0P7xfs" ></div>
+    </div>
 
     <input type="submit" name="submit" class="form-control"  value="Skicka meddelande" class="submit-btn">
     </form>
@@ -56,14 +57,12 @@
         if(isset($_POST['submit']))
         {
             $User_name = $_POST['name'];
-            $phone = $_POST['phone'];
             $user_email = $_POST['email'];
             $user_message = $_POST['message'];
 
-            $email_from = 'noreply@dolge.se';
+            $email_from = 'Message from form';
             $email_subject = "Nytt formulär inskickat";
-            $email_body = "Namn: $User_name.\n". 
-                          "Telefon nr: $phone.\n".  
+            $email_body = "Namn: $User_name.\n".   
                           "Email: $user_email.\n".  
                           "Meddelande: $user_message.\n";
 
@@ -125,7 +124,6 @@
 </div>
 
     <script src="../js/Burger.js"></script>
-    <script src="../js/Carusell.js"></script>
     <script src="https://use.fontawesome.com/1088e0c346.js"></script>
 
     </body>

@@ -1,3 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.7rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -22,3 +39,91 @@ nav a, nav i:hover {
     text-decoration-style: wavy;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    margin: 2%;
+    width: 60%;
+}
+
+.form {
+margin: 0px auto;
+max-width: 400px;
+border: teal 2px solid;
+padding: 2rem;
+}
+
+input, textarea  {
+    display: block;
+    padding: .5rem;
+    margin: 1rem auto;
+    color: cornsilk;
+    background-color: rgba(2, 48, 25, 0.966);
+}
+
+/* Recaptcha */
+.recaptcha-wrap {
+    width: 80%;
+    position: relative;
+    height: 76px;
+    padding:1px 0 0 1px;
+    background:#222;
+      }
+  
+  
+  /* Hides top border */
+  .recaptcha-wrap:after {
+    content:'';
+    display: block;
+    background-color: #222;
+    height: 2px;
+    width: 100%;
+    top: -1px;
+    left: 0px;
+    position: absolute;
+  }
+  
+  /* Hides left border */
+  .recaptcha-wrap:before {
+    content:'';
+    display: block;
+    background-color: #222;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: -1px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Makes it responsive & hides cut-off elements */
+  #g-recaptcha {
+      overflow: hidden;
+      width: 80%;
+      height: 76px;
+      border-right: 60px solid #222222;
+      border-top: 1px solid #222222;
+      border-bottom: 1px solid #222;
+      position: relative;
+      box-sizing: border-box;
+    
+  }
+  
+  .g-recaptcha {
+    margin: 10px auto;
+  }
+
+.right-side {
+    margin: 2%;
+    width: 20%;
+}
+
+.footer {
+    margin: 2%;
+    background-color: silver;
+    text-align: center;
+    text-transform: uppercase;
+}
