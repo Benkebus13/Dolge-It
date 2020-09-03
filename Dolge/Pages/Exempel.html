@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exempel</title>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
@@ -10,67 +10,133 @@
     <link rel="stylesheet" type="text/css" href="../css/Dolge.css" />
     <link rel="stylesheet" type="text/css" href="../css/Carusell.css"/>
     <link rel="stylesheet" type="text/css" href="../css/burger.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Gallery.css"> 
 
-  
-  </head>
-  <body>
-<div class="wrapper">
-    <div class="nav-container">
+</head>
+<body>
+    <div class="wrapper">
+      <div class="nav-container">
         <div class="logga"><b>Dolge IT & Support</b></div>
 
-        <div class="menu-btn">
+          <div class="menu-btn">
             <div class="menu-btn_burger"></div>
-        </div>
-
-        <div class="navbar-links">
-          <ul>
-            <li><a href="../index.html">Dolge</a></li>
-            <li><a href="Exempel.html" class="active">Exempel</a></li>
-            <li><a href="#">Sidor</a></li>
-            <li><a href="Contact.php">Kontakt</a></li>
-            <li><a href="#">Länkar</a></li>
-          </ul>
-        </div>
-    </div>
-
-    <div class="main-container">
-          <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <h1>Image Carusell</h1>
-
-  <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="../Img/Blom/DSC_6705.jpg" style="width:100%">
-          <div class="text">Solnedgång över havet</div>
-        </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="../Img/Blom/DSC_2677-Redigera.jpg" style="width:100%">
-            <div class="text">Trollslända</div>
           </div>
+    
+          <div class="navbar-links">
+            <ul>
+              <li><a href="../index.html">Dolge</a></li>
+              <li><a href="Exempel.html" class="active">Exempel</a></li>
+              <li><a href="#">Sidor</a></li>
+              <li><a href="Contact.php">Kontakt</a></li>
+              <li><a href="#">Länkar</a></li>
+            </ul>
+          </div> <!-- navbar-links ends here-->
+        </div> <!--logga ends here -->
+      </div>  <!-- nav-container ends here-->
 
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="../Img/Blom/DSCF9734.jpg" style="width:100%">
-            <div class="text">Flaskor</div>
-          </div>
+      <div class="main-container">
+        <div class="content">
+          <div class="slideshow-container">
+            <h1>Image Carusell</h1>
 
-  <!-- Next and previous buttons -->
+          <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../Img/Blom/DSC_6705.jpg" style="width:100%">
+              <div class="text">Solnedgång över havet</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../Img/Blom/DSC_2677-Redigera.jpg" style="width:100%">
+              <div class="text">Trollslända</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../Img/Blom/DSCF9734.jpg" style="width:100%">
+              <div class="text">Flaskor</div>
+            </div>
+
+            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
+    
             <br>
 
-<!-- The dots/circles inaktiverade i css-->
+          <!-- The dots/circles inaktiverade i css-->
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-   
-          <div class="right-side">
+
+          </div> <!--slideshow-container ends here-->
+
+        <div class="gallery-wrap">
+            <h1>Flexbox Image Gallery <!DOCTYPE html></h1>
+             <div class="gallery-text">
+                <p>
+                    Även dessa bilder är hämtade från
+                    <a href="http://patrikblom.eu" target="blank">
+                      <i class="link">patrikblom.eu</i>
+                    </a>
+                    kolla gärna in hans galleri där finns massor av snygga bilder att
+                    titta på och man kan köpa bilder där också.
+                  </p>
+            </div> <!--Gallery-text ends here-->
+
+            <div class="img-area">
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSC_6356.jpg" alt="Hjärta i moln" />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSCF9734.jpg" alt="Bottels" />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSC_5118.jpg" alt="noshörning" />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSC_9210BW1280.jpg" alt="Water bw" />
+                </div>
+                <div class="single-img">
+                  <img
+                    src="../Img/Patrik Blom/DSC_6302-Redigera.jpg"
+                    alt="Heaven and sea"
+                  />
+                </div>
+                <div class="single-img">
+                  <img
+                    src="../Img/Patrik Blom/DSC_2677-Redigera.jpg"
+                    alt="Butterfly"
+                  />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSC_9429.jpg" alt="Sunset" />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSC_3549-HDR-MB.jpg" alt="Fästning" />
+                </div>
+                <div class="single-img">
+                  <img
+                    src="../Img/Patrik Blom/DSC_3370-mone.jpg"
+                    alt="Fyr och måne"
+                  />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/unnamed.jpg" alt="Waterfall" />
+                </div>
+                <div class="single-img">
+                  <img src="../Img/Patrik Blom/DSCF9709.jpg" alt="Books bw" />
+                </div>
+            </div>  <!--img-area ends here -->
+
+        </div> <!-- Gallery-wrap ends here-->
+      </div> <!--Content ends here-->
+
+       
+
+        <div class="right-side">
             <h2>Layouter</h2>
             <h3>Fast startsida</h3>
             <a href="../Pages/Fixed-img.html" target="_blank">
@@ -79,18 +145,20 @@
   
             <h3>Friends</h3>
             <img src="../Img/icons/friends300squere.png" alt="Whiskey" />
-          </div>
+          </div>  <!--right-side ends here-->
 
-  </div>
+        </div> <!-- main-container ends here-->
 
-    <div class="footer">
-        <p><b>Dolge IT & Support &copy; 2020 </b></p>
-    </div>
-</div>
+          <div class="footer">
+            <p><b>Dolge IT & Support &copy; 2020 </b></p>
+        </div>
 
+    </div> <!-- wrapper ends here-->
+    
     <script src="../js/Burger.js"></script>
     <script src="../js/Carusell.js"></script>
     <script src="https://use.fontawesome.com/1088e0c346.js"></script>
 
-  </body>
+</body>
 </html>
+
