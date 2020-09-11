@@ -41,7 +41,7 @@
     <h2>Kontakta mig!</h2>
     <form method="post" action="">
     <input type="text" class="form-control" name="name" placeholder="Ditt Namn" required>
-    <input type="email" class="form-control" name="email" placeholder="Ditt mail" required>
+    <input type="email" class="form-control" name="email" placeholder="Din email" required>
     <textarea name="message" placeholder="Ditt meddelande" required></textarea>    
 
 
