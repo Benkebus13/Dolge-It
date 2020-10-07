@@ -25,7 +25,7 @@
 
         <div class="navbar-links">
           <ul>
-            <li><a href="../index.html">Dolge</a></li>
+            <li><a href="Dolge.html">Dolge</a></li>
             <li><a href="Exempel.html">Exempel</a></li>
             <li><a href="#">Sidor</a></li>
             <li><a href="Contact.php" class="active">Kontakt</a></li>

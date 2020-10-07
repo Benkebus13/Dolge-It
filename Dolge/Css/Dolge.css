@@ -1,14 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root{
     --font-color: whitesmoke;
     --h1-color: whitesmoke;
     --h2h3-color: lightgrey;
-    --nav-background: #779974;
-    --nav-hover-color:#C6BA56;
-    --nav-link-actice:#0086ad;
-    --border-color: #09f0e89b;
+    --nav-background: #c17f59;
+    --nav-hover-color:#f0b79d;
+    --nav-link-actice:#cabc23d5;
+    --border-color: #48627f;
   }
 
 * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -40,8 +49,14 @@ h1 {
 /* Navbar section*/
 
 .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: var(--font-color);
     background-color: var(--nav-background);
@@ -53,6 +68,13 @@ h1 {
    height: 2.5rem;
    margin: .5rem;
    text-transform: uppercase;
+   background-image: -o-linear-gradient(45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871);
    background-image: linear-gradient(45deg,
     #845ec2,
     #d65db1,
@@ -63,9 +85,15 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-   background-position: left;
-   background-size: 400%;
-   animation: bg-animation 8s infinite alternate;
+    background-position: left;
+    background-size: 400%;
+    -webkit-animation: bg-animation 8s infinite alternate;
+    animation: bg-animation 8s infinite alternate;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {background-position: left}
+    100% {background-position: right;}
 }
 
 @keyframes bg-animation {
@@ -77,6 +105,8 @@ h1 {
 font-family: 'Architects Daughter', cursive;
 margin: 0;
 padding: 0;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 }
 
@@ -95,6 +125,8 @@ display: flex;
 
 .navbar-links li:hover {
 background-color: var(--nav-hover-color);
+-webkit-transition: ease-in-out 700ms;
+-o-transition: ease-in-out 700ms;
 transition: ease-in-out 700ms;
 }
 
@@ -107,8 +139,13 @@ transition: ease-in-out 700ms;
 .menu-btn {
     top: 0rem;
     right: 1.5rem;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     }
     
     .menu-btn_burger {
@@ -118,6 +155,8 @@ transition: ease-in-out 700ms;
 
 /*content*/
 .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;  
     margin-top: 0Px;
 
@@ -125,11 +164,18 @@ transition: ease-in-out 700ms;
 
 .content {
     margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 80%;
     padding: 10%;
-    background-image: linear-gradient(to right bottom, #407cb8, #1b82b4, #0086ad, #008aa2, #008c96, #219592, #3b9d8c, #54a586, #7bb78a, #a1c891, #c8d89b, #eee8a9);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#9c5727), color-stop(#ad683d), color-stop(#bd7a53), color-stop(#cd8c69), color-stop(#dc9e7f), color-stop(#e7a681), color-stop(#f1af83), color-stop(#fbb885), color-stop(#fdbb70), color-stop(#f9c05a), color-stop(#f0c842), to(#e0d026));
+    background-image: -o-linear-gradient(left top, #9c5727, #ad683d, #bd7a53, #cd8c69, #dc9e7f, #e7a681, #f1af83, #fbb885, #fdbb70, #f9c05a, #f0c842, #e0d026);
+    background-image: linear-gradient(to right bottom, #9c5727, #ad683d, #bd7a53, #cd8c69, #dc9e7f, #e7a681, #f1af83, #fbb885, #fdbb70, #f9c05a, #f0c842, #e0d026);
     color: var(--font-color);
     border-radius: 30px;
 }
@@ -148,8 +194,12 @@ transition: ease-in-out 700ms;
 }
 
 .bilder {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .image_off,
@@ -159,12 +209,19 @@ transition: ease-in-out 700ms;
 
 .image_on,
 #home:hover .image_off {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-items: center;
     width: 20%;
     padding: 1%;    
@@ -193,7 +250,10 @@ transition: ease-in-out 700ms;
 }
 
 .img-area {
+    display: -ms-grid ;
     display: grid ;
+    -ms-grid-columns: auto auto auto auto
+    ;
     grid-template-columns: auto auto auto auto
     ;
 }
@@ -203,8 +263,12 @@ transition: ease-in-out 700ms;
     width: 90%;
     margin: auto;
     background-color: var(--nav-background);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
     color: #555;
@@ -223,10 +287,14 @@ transition: ease-in-out 700ms;
         top: 10px;
         right: 20px;
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .menu-btn_burger{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         cursor: pointer;
     }
@@ -239,13 +307,21 @@ transition: ease-in-out 700ms;
     .nav-container {       
         color: whitesmoke;
         background-color: var(--nav-background);       
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;       
+        -webkit-box-direction: normal;       
+            -ms-flex-direction: column;       
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .navbar-links ul {
         width: 100%;
-        flex-direction: column;       
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;       
     }
 
     .navbar-links li {
@@ -261,6 +337,8 @@ transition: ease-in-out 700ms;
     }
 
     .navbar-links.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -277,12 +355,17 @@ transition: ease-in-out 700ms;
 
       .right-side {
        display: none;
-       flex-direction:column;
+       -webkit-box-orient:vertical;
+       -webkit-box-direction:normal;
+           -ms-flex-direction:column;
+               flex-direction:column;
        margin: 2% auto;
        width: 50%;
     }
    
     .right-side img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 5% auto;
         max-width: 300px;
@@ -290,7 +373,9 @@ transition: ease-in-out 700ms;
     }
 
     .img-area {
+        display: -ms-grid ;
         display: grid ;
+        -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     }
 }
@@ -299,17 +384,23 @@ transition: ease-in-out 700ms;
 
 @media (max-width: 867px) {
     .img-area {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
 
 .right-side {
     display: none;
     width: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
     .right-side img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 5% auto;
         max-width: 200px;
@@ -320,5 +411,3 @@ transition: ease-in-out 700ms;
         max-width: auto;
     }
 } 
-
-

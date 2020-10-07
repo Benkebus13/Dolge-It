@@ -100,7 +100,7 @@ nav {
     transform: translateY(100%);
     display: inline-block;
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     #logo {
         font-size: 1.5rem;
@@ -116,10 +116,19 @@ nav {
     }
 }    
 
-@media (max-width: 867px) {
+@media screen and (max-width: 896px) {
 
     #logo {
         font-size: 1.5rem;
+    }
+
+    .hide {
+        background: transparent;
+        overflow: hidden;
+    }
+
+    .intro {
+        height: 110%;
     }
 
     .big-text  {
@@ -132,14 +141,19 @@ nav {
     }
 }  
 
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
 
     .landing {
         padding: 1rem 1rem;
     }
 
+    .hide {
+        background: transparent;
+        overflow: hidden;
+    }
+
     #logo {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .big-text  {
@@ -152,7 +166,7 @@ nav {
     }
 
     .nav-links li {
-        padding-left: 1.5rem;
+        padding-top: 1rem;
         font-size: 1.2rem;
     }
 }
