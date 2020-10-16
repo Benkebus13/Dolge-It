@@ -34,7 +34,7 @@ body{
     border-color:#ccc;
     border-style:none none solid none;
     width:100%;
-    font-size:1.25em;
+    font-size:1.25rem;
     transition:all .6s;
 }
 .form-control::placeholder{

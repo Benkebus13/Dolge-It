@@ -14,7 +14,7 @@ main {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    padding: 0rem 5rem;
+    padding: 0rem 5em;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ nav {
 }
 
 .nav-links li {
-    padding-left: 10rem;
+    padding-left: 6em;
     font-size: 1.2rem;
 }
 
@@ -111,7 +111,7 @@ nav {
     }
 
     .nav-links li {
-        padding-left: 5rem;
+        padding-left: 3em;
         font-size: 1.5rem;
     }
 }    
@@ -136,15 +136,15 @@ nav {
     }
 
     .nav-links li {
-        padding-left: 2.5rem;
+        padding-left: 0.8em;
         font-size: 1.5rem;
     }
 }  
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 520px) {
 
     .landing {
-        padding: 1rem 1rem;
+        padding: 1em 1em;
     }
 
     .hide {
@@ -166,7 +166,7 @@ nav {
     }
 
     .nav-links li {
-        padding-top: 1rem;
+        padding-top: 1em;
         font-size: 1.2rem;
     }
 }

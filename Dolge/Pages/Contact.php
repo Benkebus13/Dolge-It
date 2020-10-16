@@ -123,7 +123,7 @@
     </div>
 </div>
 
-    <script src="../js/Burger.js"></script>
+    <script src="../Js/Burger.js"></script>
     <script src="https://use.fontawesome.com/1088e0c346.js"></script>
 
     </body>

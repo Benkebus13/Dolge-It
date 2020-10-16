@@ -329,7 +329,7 @@ transition: ease-in-out 700ms;
     }
 
     .navbar-links li a {
-        padding: .5rem 1rem;        
+        padding: .5em 1em;        
     }
     
     .navbar-links li:hover {
