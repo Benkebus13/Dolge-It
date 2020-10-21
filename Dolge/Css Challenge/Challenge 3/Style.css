@@ -1,3 +1,10 @@
+:root {
+  --font-color: whitesmoke;
+  --h1-color: whitesmoke;
+  --background-color: #23424A;
+  --button-color: #38cfd9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,31 +17,37 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
   font-weight: bold;
-  color: white;
-  width: 60%;
+  color: var(--h1-color);
+  width: 50%;
   margin: 2rem 1rem;
 }
 
 p {
   font-family: 'Roboto Regular', sans-serif;
   font-size: 1.2em;
-  color: white; 
-  width: 60%;
+  color: var(--font-color); 
+  width: 50%;
   margin: 2rem 1rem 5rem 1rem;
 }
 
 .header {
-  background: #23424A;
+  background: var(--background-color);
   padding: 3em;
 }
 
-a {
-  color: black;
+.btn {
+  color: var(--background-color);
+  display: inline-block;
   text-decoration: none;
   font-family: 'Roboto Bold', sans-serif;
   text-transform: uppercase;
   font-size: 1.2em;
   padding: 1rem 3rem;
-  background-color: #38cfd9;
+  background-color: var(--button-color);
   border-radius: 50px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: .75;
 }
