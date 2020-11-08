@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1,3125rem;
+    line-height: 1.6;
+    color: #222c2a;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    
+}
+.intro {
+    background: #f3eed9;
+    min-height: 660px;
+}
+
+.container{
+    max-width: 1128px;
+    width: 85%;
+}
+/*
+font-family: 'Playfair Display', serif;
+*/

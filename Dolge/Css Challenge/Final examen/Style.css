@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'oswald bold', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+img {
+    max-width: 100%;
+}
+
