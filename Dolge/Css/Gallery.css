@@ -39,7 +39,7 @@
     margin: auto;
     padding: 2em 0;  
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 2vh;
     grid-auto-flow: dense; 
 }

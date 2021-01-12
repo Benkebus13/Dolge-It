@@ -24,7 +24,7 @@ img {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0;
 }
 
@@ -80,7 +80,7 @@ header {
     transition: opacity 250ms ease;
     
     position: absolute;
-    left: 0;
+    right: 0;
 }
 
 .nav-toggle:focus,
@@ -134,8 +134,43 @@ header {
 
 
 .logo {
-    height: 30px;
-}
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    height: 2.5rem;
+    margin: .5rem;
+    text-transform: uppercase;
+    background-image: -o-linear-gradient(45deg,
+     #845ec2,
+     #d65db1,
+     #ff6f91,
+     #ff9671,
+     #ffc75f,
+     #f9f871);
+    background-image: linear-gradient(45deg,
+     #845ec2,
+     #d65db1,
+     #ff6f91,
+     #ff9671,
+     #ffc75f,
+     #f9f871);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     background-position: left;
+     background-size: 400%;
+     -webkit-animation: bg-animation 8s infinite alternate;
+     animation: bg-animation 8s infinite alternate;
+ }
+ 
+ @-webkit-keyframes bg-animation {
+     0% {background-position: left}
+     100% {background-position: right;}
+ }
+ 
+ @keyframes bg-animation {
+     0% {background-position: left}
+     100% {background-position: right;}
+ }
 
 
 .hero {
